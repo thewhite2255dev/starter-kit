@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate-routes": "node lib/generate-routes.ts",
+    "predev": "pnpm generate-routes",
+    "prebuild": "pnpm generate-routes",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

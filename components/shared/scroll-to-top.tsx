@@ -37,8 +37,8 @@ export function ScrollToTop() {
         { "left-1/2": isTablet === true },
         showTopBtn ? "opacity-100" : "pointer-events-none cursor-default opacity-0"
       )}
-      size="icon-sm"
-      aria-label="Retour en haut"
+      size="icon"
+      aria-label="Scroll to top"
     >
       <ArrowUpToLine aria-hidden="true" />
     </Button>

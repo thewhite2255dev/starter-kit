@@ -23,7 +23,18 @@ export function generateAvatarFallback(name: string, index: number): string {
     .toUpperCase()
 }
 
-export function getNamePart(name: string, index: number): string {
+export function getStringByIndex(name: string, index: number): string {
   const parts = name?.trim().split(/\s+/) ?? []
   return parts[index - 1] ?? ""
+}
+
+export function generateSlug(title: string): string {
+  const slug = title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+
+  return slug
 }

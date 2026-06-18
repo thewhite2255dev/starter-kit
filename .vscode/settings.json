@@ -1,3 +1,4 @@
 {
-  "commentTranslate.targetLanguage": "fr"
+  "commentTranslate.targetLanguage": "fr",
+  "js/ts.preferences.importModuleSpecifier": "non-relative"
 }
